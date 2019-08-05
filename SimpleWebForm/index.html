@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Team Introduction</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="mainform, ui-grid-a" id="inputForm" style="display:block">
+        <div class="titlebox">
+            <h1>Team Introduction</h1>
+            <p>Introduce yourself to the team!</p>
+        </div>
+        <div>
+            <label for="nameInput">Name:</label>
+            <input type="text" id="nameInput" name="team_member_name">
+        </div>
+        <div>
+            <label for="factInput">Fun Fact:</label>
+            <input type="text" id="factInput" name="fun_fact">
+        </div>
+        <div>
+            <button id="submitBtn" onclick="submit()">Submit</button>
+        </div>
+    </div>
+    <div class="mainform" id="introduction" style="display:none">
+        <div>
+            <h3 id="nameOutput">Place Holder</h3>
+            <h3 id="factOutput">Place Holder2</h3>
+        </div>
+        <div>
+            <button id="resetBtn" onclick="reset()">Next Team Member</button>
+        </div>
+    </div>
+</body>
+</html>
